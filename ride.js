@@ -132,5 +132,3 @@
       timeInput.click();
     }
   });
-
-  
