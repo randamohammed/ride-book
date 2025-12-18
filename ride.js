@@ -98,7 +98,6 @@
         });
       });
 
-      // DATA
      
       const dateInput = document.getElementById("departureDate");
       const dateText = document.getElementById("dateText");
@@ -133,3 +132,5 @@
       timeInput.click();
     }
   });
+
+  
