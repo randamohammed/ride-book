@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>حجز سفر</title>
+    
+    <link rel="stylesheet" href="Style.css">
+   <script defer src="ride.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tabs">
+        <button class="tab active">
+         <span class="svg-span">
+         <svg viewBox="0 0 24 24" fill="currentColor">
+           <path d="M3 13h18v4H3zM6 17a1 1 0 1 0 0 .1M18 17a1 1 0 1 0 0 .1M6 6h12l2 5H4z"/>
+         </svg>
+         </span>
+
+        <span class="tab-lade">سفر</span>
+        </button>
+        <button class="tab">
+          <span class="svg-span"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM7 3V8.41421L10.2929 11.7071L11.7071 10.2929L9 7.58579V3H7Z" fill="#000000"/> </svg></span>
+          <span>بالساعة</span>
+        </button>
+
+        <button class="tab">
+          <span  class="svg-span"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 225.000000 225.000000"
+         preserveAspectRatio="xMidYMid meet">
+
+         <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)"
+         fill="#000000" stroke="none">
+         <path d="M666 1955 c-64 -23 -86 -44 -189 -186 -152 -207 -138 -129 -135 -747
+         l3 -529 30 -48 c22 -36 45 -57 84 -77 l53 -28 613 0 613 0 53 28 c39 20 62 41
+         84 77 l30 48 0 543 0 542 -67 99 c-122 178 -171 236 -218 263 l-45 25 -435 2
+         c-356 2 -442 0 -474 -12z m904 -287 c33 -45 60 -85 60 -90 0 -4 -227 -8 -505
+         -8 -278 0 -505 4 -505 8 0 5 27 45 60 90 l60 82 385 0 385 0 60 -82z"/>
+         </g></svg></span>
+          <span>باقات</span>
+        </button>
+       <button class="tab">
+  <span class="svg-span">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M3 6h12v12H3zM15 9l6-3v12l-6-3z"/>
+    </svg>
+  </span>
+  <span>فيديو</span>
+</button>
+
+      </div>
+
+      <div class="tab-content">
+        <div class="trip-type">
+          <label class="radio-group">
+            <input type="radio" name="tripType" value="one-way" checked />
+            <span>ذهاب فقط</span>
+          </label>
+          <label class="radio-group">
+            <input type="radio" name="tripType" value="round-trip" />
+            <span>ذهاب وعودة</span>
+          </label>
+        </div>
+
+        <div class="input-group">
+          <div class="input-wrapper">
+            <input type="text" placeholder="موقع الانطلاق" id="departure" />
+             <span class="input-icon">
+                <svg class="svg-span" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/>
+              </svg>
+              </span>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="input-wrapper">
+            <input type="text" placeholder="موقع الوصول" id="arrival" />
+            <span class="input-icon">
+                <svg class="svg-span" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/>
+              </svg>
+              </span>
+          </div>
+        </div>
+
+        <div class="date-time-group">
+          <div class="input-data" id="dateBox">
+        
+              <span  id="dateText">تاريخ الانطلاق</span >
+                <input  type="date" id="departureDate" />
+                 <span class="svg-span">
+               <svg viewBox="0 0 24 24" fill="currentColor">
+                 <path d="M7 2v2H5a2 2 0 0 0-2 2v3h18V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zm14 9H3v9a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-9z"/>
+               </svg>
+              </span>
+           
+          </div>
+
+          <div class="input-data"  id="timeBox">
+            <span class="date-time-label">وقت الانطلاق</span>
+            <input  type="time" value="12:00" id="departureTime" />
+               <span  class="svg-span svg-span-data"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM7 3V8.41421L10.2929 11.7071L11.7071 10.2929L9 7.58579V3H7Z" fill="#000000"/> </svg></span>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div
+            class="input-wrapper passengers-input-wrapper"
+            id="passengersToggle">
+            <span class="passengers-label-top">الركاب</span>
+            <input
+              type="text"
+              placeholder="الركاب"
+              id="passengersInput"
+              readonly
+            />
+            <span class="dropdown-icon" id="dropdownIcon">▼</span>
+          </div>
+        </div>
+
+        <div class="passengers-section" id="passengersSection">
+          <div class="passenger-control">
+            <div>
+              <div class="passenger-label">الركاب</div>
+              <div class="passenger-sublabel">عدد الركاب</div>
+            </div>
+            <div class="counter">
+              <button onclick="decrementPassengers()">−</button>
+              <span id="passengersCount">0</span>
+              <button onclick="incrementPassengers()">+</button>
+            </div>
+          </div>
+
+          <div class="passenger-control">
+            <div>
+              <div class="passenger-label">السيارات</div>
+              <div class="passenger-sublabel">عدد السيارات</div>
+            </div>
+            <div class="counter">
+              <button onclick="decrementCars()">−</button>
+              <span id="carsCount">1</span>
+              <button onclick="incrementCars()">+</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="book-button">احجز الآن</button>
+      </div>
+    </div>
+
+
+  </body>
+</html>
