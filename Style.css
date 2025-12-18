@@ -381,13 +381,7 @@
         .date-time-group{
           grid-template-columns: 1fr;
         }
-        .svg-span-data{
-          margin-right: -60px;
-        }
-
-        .svg-span-time{
-          margin-right: 30px;
-        }
+       
       }
        .svg-span-data{
           margin-right: 40px;
